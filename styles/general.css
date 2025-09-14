@@ -1,0 +1,208 @@
+/*Загальні стилі*/
+:root{
+    /*кольори*/
+    --color-accent: #303030;
+    --color-black: #000;
+    --color-white: #fff;
+
+    /*розміри тексту*/
+    --size-h1: 44px;
+    --size-h2: 22px;
+    --size-usual: 14px;
+    --size-small: 12px;
+
+    /*сімейства шрифтів*/
+    --bowlby-one-sc: "Bowlby One SC", sans-serif;;
+    --manrope: "Manrope", sans-serif;
+
+    /*жирність шрифтів*/
+    --font-weight-usual: 400;
+    --font-weight-accent: 700;
+}
+
+.text-title{
+    font-family: var(--bowlby-one-sc);
+    color: var(--color-black);
+    font-weight: var(--font-weight-usual);
+    font-size: var(--size-h1);
+}
+
+.text-sub-title{
+    font-family: var(--manrope);
+    color: var(--color-black);
+    font-weight: var(--font-weight-accent);
+    font-size: var(--size-h2);
+}
+
+.text-usual-accent{
+    font-family: var(--manrope);
+    color: var(--color-black);
+    font-weight: var(--font-weight-accent);
+    font-size: var(--size-usual);
+}
+
+.text-usual{
+    font-family: var(--manrope);
+    color: var(--color-black);
+    font-weight: var(--font-weight-usual);
+    font-size: var(--size-usual);
+}
+
+.text-small{
+    font-family: var(--manrope);
+    color: var(--color-black);
+    font-weight: var(--font-weight-usual);
+    font-size: var(--size-usual);
+}
+
+.text-color-white{
+    color: var(--color-white);
+}
+
+/*притискаємо футер до низу сторінки*/
+body, html{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > main{
+    flex-grow: 1;
+}
+
+/*адаптив*/
+@media (max-width: 1240px) {  
+    :root{
+        --size-h1: 36px;
+        --size-h2: 18px;
+        --size-usual: 12px;
+        --size-small: 10px;
+    }
+
+    .footer-images >img{
+        width: 160px;
+        height: auto;
+    }
+
+    .source-link{
+        width: 20px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1160px) {  
+    .grid-box-item-1{
+        grid-column: 3 / span 4;
+    }
+
+    .grid-box-item-2{
+        grid-column: 7 / span 4;
+    }
+
+    .source-link{
+        width: 18px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1020px) {  
+    :root{
+        --size-h1: 30px;
+        --size-h2: 16px;
+        --size-usual: 12px;
+        --size-small: 10px;
+    }
+
+    .footer-images >img{
+        width: 140px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 840px) {  
+    :root{
+        --size-h1: 28px;
+        --size-h2: 14px;
+        --size-usual: 10px;
+        --size-small: 8px;
+    }
+
+    .footer-content{
+        padding: 24px 0px 14px 0px;
+        gap: 12px;
+    }
+
+    .source-link{
+        width: 16px;
+        height: auto;
+    }
+
+    .footer-images{
+        position: initial;
+    }
+
+    section{
+        position: initial;
+        margin-bottom: 24px;
+    }
+
+}
+
+@media (max-width: 780px) {  
+    .grid-box-item-1{
+        grid-column: 2 / span 5;
+    }
+
+    .grid-box-item-2{
+        grid-column: 7 / span 5;
+    }
+   
+}
+
+@media (max-width: 600px) {  
+    .footer-images >img{
+        width: 100px;
+        height: auto;
+    }
+
+    .grid-box-item-1{
+        grid-column: 3 / span 8;
+    }
+
+    .grid-box-item-2{
+        grid-column: 3 / span 8;
+        margin-top: 24px;
+    }
+
+}
+
+@media (max-width: 480px) {  
+    main{
+        padding: 0px 20px;
+    }
+
+    .grid-box-item-1{
+        grid-column: 2 / span 10;
+    }
+
+    .grid-box-item-2{
+        grid-column: 2 / span 10;
+    }
+
+    :root{
+        --size-h1: 24px;
+        --size-h2: 14px;
+        --size-usual: 10px;
+        --size-small: 8px;
+    }
+
+    .footer-content{
+        padding: 20px 20px 12px 20px;
+    }
+}
+

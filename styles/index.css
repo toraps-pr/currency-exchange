@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content{
+    background-color: var(--color-accent);
+    padding: 40px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-images{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+section{
+   position: absolute;
+   width: 100%;
+   height: auto;
+   z-index: 1000;
+}
+
+h1{
+    margin-top: 48px;
+    text-align: center;
+}
+
+h2{
+    margin-top: 18px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+}
+
+.grid-box-item-1{
+    grid-column: 4 / span 3;
+}
+
+.grid-box-item-2{
+    grid-column: 7 / span 3;
+    background-color: var(--color-accent);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form-group > input, .form-group select{
+   background-color: transparent;
+   border: solid;
+   border-width: 2px;
+   border-color: var(--color-black);
+   padding: 8px;
+   border-radius: 14px;
+   margin-top: 10px;
+   outline: none;
+}
+
+
+.reset_btn, .calculate_btn{
+    cursor: pointer;
+    padding: 8px 24px;
+    border-radius: 14px;
+    border: solid;
+    border-width: 2px;
+    background-color: transparent;
+    border-color: var(--color-black);
+}
+
+.calculate_btn{
+    background-color: var(--color-black);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculated-amount{
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.current-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

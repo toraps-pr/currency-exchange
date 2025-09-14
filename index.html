@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency exchange</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/general.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <section>
+                <h1 class="text-title">Calculation of official<br>currency exchange</h1>
+                <h2 class="text-sub-title">For dreamers and entrepreneurs</h2>
+
+                <div class="grid-box">
+
+                    <form id="currencyForm" class="grid-box-item-1 text-usual-accent">
+                        <!--Сума-->
+                        <div class="form-group">
+                            <label for="amount">Enter the amount of money in hryvnias</label>
+                            <input type="text" id="amount" name="amount" required placeholder="1.00" class="text-usual"/>
+                        </div>
+
+                        <!--Валюта-->
+                        <div class="form-group">
+                            <label for="currency">Choose the currency to exchange</label>
+                            <select id="currency"  class="text-usual">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <!--Pound (Фунт стерлінгів)-->
+                                <option value="GBP">GBP</option>
+                            </select>
+                        </div>
+                        <div class="buttons">
+                            <button class="reset_btn text-usual-accent">Reset</button>
+                            <button class="calculate_btn text-usual-accent text-color-white">Calculate</button>
+                        </div>
+                    </form>
+                    <div class="grid-box-item-2"> 
+                        <div>
+                            <p class="text-usual text-color-white">Result of the exchange</p>
+                            <p id="enteredSum" class="text-usual-accent text-color-white">0 UAH =</p>
+                        </div>
+                        <p class="text-title text-color-white calculated-amount">0.0 USD</p>
+                        <div class="current-info">
+                            <p class="text-small text-color-white current-rate">0 USD = 0 UAH</p>
+                            <p class="text-small text-color-white date-of-relevance">relevant to 00.00.0000</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-images">
+                <img src="images/dude1.png" alt="">
+                <img src="images/dude2.png" alt="">
+            </div>
+            <div class="footer-content">
+                <p class="text-small text-color-white">All information is taken from the official website of the National Bank of Ukraine</p>
+                <a href="https://bank.gov.ua/ua/open-data" target="_blank">
+                    <img src="images/link_btn.svg" alt="link" class="source-link">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
